@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:background="#FAF8F8"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="#00F4F4F4"
+                    android:layout_height="match_parent"
+                    tools:context=".AddBookDetails">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add Room"
+                        android:gravity="center"
+                        android:fontFamily="monospace"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textColor="#4A0822"
+                        android:layout_marginBottom="15dp"/>
+                    <EditText
+                        android:id="@+id/roomname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:padding="10dp"
+                        android:background="@drawable/editback"
+                        android:layout_margin="10dp"
+                        android:inputType="textPersonName"
+                        android:hint="Room Name" />
+
+                    <EditText
+                        android:id="@+id/dailyrent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:padding="10dp"
+                        android:background="@drawable/editback"
+                        android:layout_margin="10dp"
+                        android:inputType="number"
+                        android:hint="Daily Rent" />
+
+
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:minLines="2"
+                        android:gravity="top"
+                        android:padding="10dp"
+                        android:background="@drawable/editback"
+                        android:layout_margin="10dp"
+                        android:inputType="textMultiLine"
+                        android:hint="Description" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Room Type       "
+                            android:gravity="center"
+                            android:textColor="#333333"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"/>
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/rg_roomtype"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:id="@+id/rb_ac"
+                                android:text="Ac"/>
+                            <RadioButton
+                                android:id="@+id/rb_nonac"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Non Ac"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Status"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/rg_bookstatus"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_booked"
+                            android:text="Booked"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:checked="true"
+                            android:id="@+id/rb_vacant"
+                            android:layout_height="wrap_content"
+                            android:text="vacant"/>
+                    </RadioGroup>
+</LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/addroom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#fff"
+                            android:backgroundTint="#EF2453"
+                            android:text="Add room" />
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
